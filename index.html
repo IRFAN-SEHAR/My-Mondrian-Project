@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+        flex-wrap: nowrap;
+        margin:100px;
+        padding:0;
+    }
+    .container{
+        display: grid;
+        width: 1000px;
+        height: 1000px;
+        background-color:  #000;
+        gap: 10px;
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr 0.3fr 0.2fr;
+        grid-template-rows:0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
+    }   
+    .box{
+        background-color: #07aaf5;
+    }
+    .white1{
+        background-color: #F0F1EC;
+        grid-column: span 2;
+    }
+    .white2{
+        background-color: #F0F1EC;
+        grid-column: span ;
+    }
+    .yellow1{
+        background-color: #F9D01E;
+        grid-column-start: 4;
+        grid-column-end: 6 ;
+    }
+    .white3{
+        background-color: #F0F1EC;
+        grid-row: span 4;
+    }
+    .white4{
+        background-color: #F0F1EC;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end:0.5;
+    }
+    .red1{
+        background-color: #E72F24;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .yellow2{
+        background-color: #F9D01E;
+        grid-column-start: 4;
+        grid-column-end: 6 ;
+    }
+    .white5{
+        background-color: #F0F1EC;
+        grid-column-start: 4;
+    }
+    .white6{
+        background-color: #F0F1EC;
+        grid-row-start: 3;
+        grid-column-start: 5;
+    }
+    .white7{
+        background-color: #F0F1EC;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+    }
+    .black1{
+        background-color: #232629;
+    }
+    .white8{
+        background-color: #F0F1EC;
+    }
+    .white9{
+        background-color: #F0F1EC;
+        grid-column: span 2;
+    }
+    .yellow3{
+        background-color: #F9D01E;
+        grid-row: span 2;
+    }
+    .black2{
+        background-color: #232629;
+    }
+    .white10{
+        background-color: #F0F1EC;
+    }
+    .blue1{
+        background-color: #004592;
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    .red2{
+        background-color: #E72F24;
+        grid-row: span 2;
+    }
+    .white11{
+        background-color: #F0F1EC;
+    }
+    .black3{
+        background-color: #232629;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="white1 box"></div>
+     <div class="white2 box"></div> 
+     <div class="yellow1 box"></div>
+     <div class="white3 box"></div>
+     <div class="white4 box"></div>
+     <div class="red1 box"></div> 
+     <div class="yellow2 box"></div>   
+     <div class="white5 box"></div>
+     <div class="black1 box"></div> 
+     <div class="white6 box"></div>  
+     <div class="white7 box"></div> 
+     <div class="white8 box"></div> 
+     <div class="white9 box"></div> 
+     <div class="yellow3 box"></div> 
+     <div class="black2 box"></div>
+     <div class="white10 box"></div> 
+     <div class="blue1 box"></div>  
+     <div class="red2 box"></div> 
+     <div class="white11 box"></div>
+     <div class="black3 box"></div>
+</body>
+</html>
